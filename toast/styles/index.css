@@ -1,0 +1,63 @@
+@import url('./reset.css');
+
+#app {
+   min-height: 100vh;
+   font-family: Montserrat;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+:root {
+   --success: green;
+   --danger: red;
+   --warning: #F4D03F;
+}
+.success {
+   background-color: var(--success);
+   color: white;
+}
+.danger {
+   background-color: var(--danger);
+   color: white;
+}
+.warning {
+   background-color: var(--warning);
+   color: white;
+}
+.btn-group {
+   margin: 2rem;
+   display: flex;
+   gap: 0 1rem;
+}
+button {
+   padding: .7rem 1.4rem;
+   border: none;
+   border-radius: 6px;
+   cursor: pointer;
+}
+button:focus {
+   outline: none;
+   transform: scale(1.075);
+}
+#toast.show {
+   opacity: 1;
+   width: initial;
+   height: initial;
+}
+#toast {
+   position: fixed;
+   top: 2rem;
+   left: 2rem;
+   display: flex;
+   align-items: center;
+   color: white;
+   padding: 2rem;
+   border-radius: 6px;
+   gap: 1rem;
+   width: 0;
+   height: 0;
+   opacity: 0;
+   transition: opacity linear .6s;
+   overflow: hidden;
+}
