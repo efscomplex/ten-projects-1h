@@ -1,0 +1,42 @@
+@import url('./reset.css');
+
+#app {
+   position: relative;
+   min-height: 100vh;
+   font-family: Montserrat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#modal {
+   position: absolute;
+   width: 100vw;
+   background-color: rgba(0,0,0,.3);
+   display: flex;
+   align-items: center;
+   justify-content: center;   
+   height: 0;
+   overflow: hidden;
+}
+#modal-content {
+   position: relative;
+   padding: 3rem;
+   background-color: white;
+   color: gray;
+   border-radius: 9px;
+}
+#close-btn {
+   position: absolute;
+   right: 1rem;
+   top: 1rem;
+   cursor: pointer;
+}
+#modal.show-modal{
+   height: 100vh;
+}
+#modalized {
+   cursor: pointer;
+}
+#modalized:hover{
+    text-decoration: underline;
+}
