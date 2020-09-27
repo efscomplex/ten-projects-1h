@@ -1,0 +1,58 @@
+@import url('./reset.css');
+body {
+   min-height: 100vh;
+   font-family: Montserrat;
+   background-color: #333;
+   color: white;
+}
+#app {
+   padding: 3rem;
+}
+header {
+   text-align: center;
+}
+nav {
+   position: fixed;
+   top:0;
+   left:0;
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem 0;
+   background-color: purple;
+   padding: 1rem;
+   border-radius: 6px;
+   transition: transform .3s ease-in-out;
+   transform: translateX(-100%);
+}
+nav:after {
+   position: absolute;
+   top: 1rem;
+   right: -4rem;
+   content:'x';
+   font-size: 1rem;
+   line-height: .6;
+   background-color: purple;
+   color: white;
+   padding: 12px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+li {
+   line-height: 1.5;
+   cursor: pointer;
+}
+.show {
+   transform: translateX(0);
+}
+main {
+   text-align: center;
+}
+.subtitle {
+   margin: 3rem;
+}
+.hamb-pic {
+   width: 40vw;
+   border-radius: 10%;
+   box-shadow: 3px 3px 14px rgba(20,20,20,.3);
+}
