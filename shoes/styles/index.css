@@ -1,0 +1,9 @@
+@import url('./reset.css');
+
+#app {
+   min-height: 100vh;
+   font-family: Montserrat;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
